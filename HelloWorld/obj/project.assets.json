@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fwyyy\\.nuget\\packages\\": {},
+    "C:\\Users\\JJ\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fwyyy\\OneDrive\\Documents\\AMIS3610\\esay-hotel\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\ACCTMIS3610\\easy-hotel\\HelloWorld\\HelloWorld.csproj",
       "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\fwyyy\\OneDrive\\Documents\\AMIS3610\\esay-hotel\\HelloWorld\\HelloWorld.csproj",
-      "packagesPath": "C:\\Users\\fwyyy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fwyyy\\OneDrive\\Documents\\AMIS3610\\esay-hotel\\HelloWorld\\obj\\",
+      "projectPath": "C:\\ACCTMIS3610\\easy-hotel\\HelloWorld\\HelloWorld.csproj",
+      "packagesPath": "C:\\Users\\JJ\\.nuget\\packages\\",
+      "outputPath": "C:\\ACCTMIS3610\\easy-hotel\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fwyyy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\JJ\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
