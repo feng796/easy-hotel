@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Easy.Hotel.Controllers{
-    [Route("Parking")]
+    [Route("parking")]
     public class ParkingController : Controller{
         [Route("")]
         [Route("index")]

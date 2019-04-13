@@ -21,3 +21,10 @@ C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Home\in
 C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Easy.Hotel.RazorTargetAssemblyInfo.cs
 C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Easy.Hotel.Views.pdb
 C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Easy.Hotel.csproj.CopyComplete
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Detail\index.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Detail\upgrade.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Home\checkin.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Home\checkout.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Parking\index.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Paymentcheckin\index.g.cshtml.cs
+C:\ACCTMIS3610\easy-hotel\Easy.Hotel\obj\Debug\netcoreapp2.2\Razor\Views\Thankyou\index.g.cshtml.cs

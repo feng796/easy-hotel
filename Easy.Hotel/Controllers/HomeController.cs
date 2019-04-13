@@ -2,16 +2,22 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Easy.Hotel.Controllers{
-    
+    [Route("home")]
     public class HomeController : Controller{
+        [Route("")]
+        [Route("index")]
         public IActionResult Index(){
-            return view();
+            return View();
         }
+
+        [Route("checkin")]
         public IActionResult Checkin(){
-            return Content("Check - in");
+            return View();
         }
+
+        [Route("checkout")]
         public IActionResult Checkout(){
-            return Content("Check - out");
+            return View();
         }
     }
 }
