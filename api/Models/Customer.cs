@@ -1,6 +1,6 @@
 using System;
 
-namespace newhotel.api.models
+namespace EasyHotel.api.models
 {
     public class Customer
     {

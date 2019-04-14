@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using newhotel.api.models;
+using EasyHotel.api.data;
+using EasyHotel.api.models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace newhotel.api.controllers
+namespace EasyHotel.api.controllers
 {
     [Route("api/customer")]
     [ApiController]
@@ -35,20 +36,22 @@ namespace newhotel.api.controllers
             this.db.SaveChanges();
         }
         [HttpGet]
-        public IActionResult AddCustomer()
+        public IActionResult Get()
         {
-            return View();
+            return Ok(db.Customer);
         }
-        [HttpGet("{id}")]
+
+        [HttpGet("{id}", Name = "GetCustomer")]
         public IActionResult GetCustomer(int id)
         {
-            var customer = db.Customer.FirstOrDefault(b => b.Id ==id);
-            if(customer==null){
+            var customer = db.Customer.FirstOrDefault(b => b.Id == id);
+            if (customer == null)
+            {
                 return NotFound();
             }
             return View(customer);
         }
-        [HttpPost("add")]
+        [HttpPost]
         public IActionResult Post([FromBody]Customer customer)
         {
             if (customer == null)
@@ -57,7 +60,7 @@ namespace newhotel.api.controllers
             }
             db.Customer.Add(customer);
             db.SaveChanges();
-            return CreatedAtRoute("Get Customer", new {id = customer.Id}, customer);
+            return CreatedAtRoute("Get Customer", new { id = customer.Id }, customer);
         }
     }
 }

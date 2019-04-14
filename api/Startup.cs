@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using newhotel.api.models;
+using EasyHotel.api.models;
+using EasyHotel.api.data;
 
 namespace newhotel.Api
 {
@@ -24,7 +25,8 @@ namespace newhotel.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CustomerContext>(options => options.UseInMemoryDatabase("Customer"));
+            services.AddDbContext<CustomerContext>(options => options.UseNpgsql(Configuration.GetConnectionString("CustomerContext")));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
