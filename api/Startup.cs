@@ -26,7 +26,13 @@ namespace newhotel.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CustomerContext>(options => options.UseNpgsql(Configuration.GetConnectionString("CustomerContext")));
-
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy", builder =>{
+                    builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -44,6 +50,7 @@ namespace newhotel.Api
             }
 
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseMvc();
         }
     }
