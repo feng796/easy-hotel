@@ -5,15 +5,18 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CustomersComponent } from './customers/customers/customers.component';
+import {CustomerComponent} from './customers/customer/customer.component'
+import { CustomersComponent } from './customers/customers.component';
 import { CustomerRowComponent } from './customers/customer-row/customer-row.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {FormsModule } from '@angular/forms';
+import { CustomersService } from './customers/customers.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    CustomerComponent,
     CustomersComponent,
     CustomerRowComponent,
     NavbarComponent
@@ -24,7 +27,7 @@ import {FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CustomersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Customer} from '../customers/customer';
+import {CustomersService} from 'src/app/shared/customers.service';
+import { Customer } from 'src/app/shared/customer.model';
 
 @Component({
   selector: 'app-customer-row',

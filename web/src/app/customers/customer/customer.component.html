@@ -1,0 +1,22 @@
+<h2 class='display-4'>Check in</h2>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <label>ID</label>
+    <input type="hidden" name="Id" #Id="ngModel" [(ngModel)]="service.formData.Id">
+    <div class="form-group">
+        <input name="Id" #fullid="ngModel" [(ngModel)]="service.formData.fullid" class="form-control" placeholder="Full id" required>
+        <div *ngIf="Id.invalid && Id.touched" class="validation-error">This field is required</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Name</label>
+            <input name="Name" #Name="ngModel"[(ngModel)]="service.formData.Name" class="form-control" placeholder="Full Name">
+        </div>
+        <div class="form-group col-md-6" >
+            <label>Room</label>
+            <input name="Room" #Room="ngModel"[(ngModel)]="service.formData.Room" class="form-control" placeholder="Full Room">
+        </div>
+    </div>
+<div class="form-control">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+</div>
+</form>
