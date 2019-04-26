@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-.form-group>input{
+form-group>input{
     font-weight: bolder;
 }
 .form-group>label{
@@ -8,8 +7,7 @@
 
 button[type="submit"]{
     background-color: #67dfd4;
-    color: #fff;
-    border-radius: 20px;
+
 }
 .jumbotron{
     background-color: #fff;

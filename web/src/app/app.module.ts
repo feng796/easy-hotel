@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastrModule} from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { CustomerRowComponent } from './customers/customer-row/customer-row.comp
 import { NavbarComponent } from './navbar/navbar.component';
 import {FormsModule } from '@angular/forms';
 import { CustomersService } from './customers/customers.service';
+import { CustomerSearchComponent } from './customer-search/customer-search.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,17 @@ import { CustomersService } from './customers/customers.service';
     CustomerComponent,
     CustomersComponent,
     CustomerRowComponent,
-    NavbarComponent
+    NavbarComponent,
+    CustomerSearchComponent,
+    CustomerSearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [CustomersService],
   bootstrap: [AppComponent]
