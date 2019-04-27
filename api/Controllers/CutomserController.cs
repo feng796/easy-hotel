@@ -49,7 +49,7 @@ namespace EasyHotel.api.controllers
             {
                 return NotFound();
             }
-            return View(customer);
+            return Ok(customer);
         }
         [HttpPost]
         public IActionResult Post([FromBody]Customer customer)
@@ -62,5 +62,24 @@ namespace EasyHotel.api.controllers
             db.SaveChanges();
             return CreatedAtRoute("Get Customer", new { id = customer.Id }, customer);
         }
+
+        protected override void Dispose(bool disposing){
+          if(disposing){
+              db.Dispose();
+          }
+          base.Dispose(disposing);
+        }
+
+        public IActionResult Delete(int Id){
+          Customer customer = db.Customer.Find(Id);
+          if(customer == null){
+              return NotFound();
+          }
+
+          db.Customer.Remove(customer);
+          db.SaveChanges();
+          return Ok(customer);
+        }
+
     }
 }

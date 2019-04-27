@@ -12164,11 +12164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\easy-hotel\\api\\newhotel.Api.csproj",
+      "projectUniqueName": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\hotel\\easy-hotel\\api\\newhotel.Api.csproj",
       "projectName": "newhotel.Api",
-      "projectPath": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\easy-hotel\\api\\newhotel.Api.csproj",
+      "projectPath": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\hotel\\easy-hotel\\api\\newhotel.Api.csproj",
       "packagesPath": "C:\\Users\\cheny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\easy-hotel\\api\\obj\\",
+      "outputPath": "C:\\Users\\cheny\\Desktop\\ACCTMIS 3610\\hotel\\easy-hotel\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
