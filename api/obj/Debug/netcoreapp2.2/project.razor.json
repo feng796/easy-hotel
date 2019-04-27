@@ -1,0 +1,29 @@
+{
+  "FilePath": "c:\\ACCTMIS3610\\easy-hotel\\api\\newhotel.Api.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "newhotel.Api",
+  "Documents": [
+    {
+      "FilePath": "Views\\Customer\\AddCustomer.cshtml",
+      "TargetPath": "Views\\Customer\\AddCustomer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Customer\\GetCustomer.cshtml",
+      "TargetPath": "Views\\Customer\\GetCustomer.cshtml",
+      "FileKind": "mvc"
+    }
+  ]
+}
