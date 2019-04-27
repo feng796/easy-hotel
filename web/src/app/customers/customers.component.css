@@ -1,0 +1,22 @@
+
+div { 
+    text-align:center; 
+    margin: auto;
+    }
+    div a {
+    padding: 20px 50px;
+    margin-left: 750px;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 20px;
+    }
+
+h2 {
+    font-size:2.2em;
+    color:#999;
+    margin-bottom: 0;
+    text-align:center;
+    margin-bottom:1cm;
+}

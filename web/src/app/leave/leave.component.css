@@ -1,0 +1,25 @@
+p {
+    margin-top:3cm;
+    color: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif,center;
+    font-size: 280%;
+    text-align:center;
+    margin-bottom: 2cm;
+    }
+    
+    h3 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif,center;
+    font-size: 300%;
+    text-align:center;
+    }
+
+    div a {
+        padding: 20px 50px;
+        margin-left: 90%;
+        text-decoration: none;
+        margin-top: 5px;
+        display: inline-block;
+        background-color: #eee;
+        border-radius: 20px;
+        }

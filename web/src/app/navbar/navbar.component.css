@@ -1,0 +1,33 @@
+li {
+    font-size: 2.2em;
+    color: #999;
+    margin-bottom: 0;
+    padding-inline-start: 2cm;
+    text-align:center; 
+    list-style:none;
+    }
+    h2 {
+    font-size: 2.2em;
+    margin-top: 0;
+    padding-top: 0;
+    }
+    nav a {
+    
+    padding: 60px 100px;
+    margin-right: 100px;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 20px;
+    }
+    nav a:visited, a:link {
+    color: #535455;
+    }
+    nav a:hover {
+    color: #57595a;
+    background-color: #d5d9db;
+    }
+    nav a.active {
+    color: #039be5;
+    }

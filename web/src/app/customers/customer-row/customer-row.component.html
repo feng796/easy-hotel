@@ -1,9 +1,16 @@
-<h3>{{ customer.Name}} </h3>
-<div><span>Id: </span>{{ customer.Id}}</div>
-<div><span>Name: </span>{{ customer.Name}}</div>
-<div><span>Room: </span>{{ customer.Room}}</div>
-<div>
-  <label>Name:
-    <input [(ngModel)]="customer.Name" placeholder="Name">
-  </label>
-</div>
+<table class="table table-hover">
+  <thead>
+    <th>No</th>
+    <th>Name</th>
+    <th>Room</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let CUS of list">
+      <td (click)="onEdit(CUS)">{{CUS.CUSCode}}-{{CUS.fullNo}}</td>
+      <td (click)="onEdit(CUS)">{{CUS.Name}}</td>
+      <td (click)="onEdit(CUS)">{{CUS.Room}}</td>
+      <td><button class="btn btn-sm btn-outline-danger" (click)="onDelete(CUS.id)">X</button></td>
+    </tr>
+  </tbody>
+</table>

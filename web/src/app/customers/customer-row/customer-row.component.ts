@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Customer} from '../customers/customer';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { Customer } from 'src/app/shared/customer.model';
+import { CustomersService } from 'src/app/shared/customers.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-row',
@@ -7,10 +10,38 @@ import {Customer} from '../customers/customer';
   styleUrls: ['./customer-row.component.css']
 })
 export class CustomerRowComponent implements OnInit {
+  list: Customer[];
+  Id: string;
+  Name: string;
+  Room: string;
 
-  @Input() customer:any;
+  constructor(private service: CustomersService,
+    private firestore: AngularFirestore,
+    private toastr: ToastrService,
+    private readonly afs: AngularFirestore) {
+  }
 
   ngOnInit() {
+    this.service.getCustomers().subscribe(actionArray => {
+      this.list = actionArray.map(item => {
+        return {
+          id: item.payload.doc.id,
+          ...item.payload.doc.data()
+        } as Customer;
+      })
+    }
+    );
   }
+
+  onEdit(CUS: Customer) {
+    this.service.formData = Object.assign({}, CUS);
+  }
+
+  onDelete(id: string) {
+    if (confirm("Are you sure to delete this record?")) {
+      this.firestore.doc('customers/' + id).delete();
+    }
+  }
+  
 
 }

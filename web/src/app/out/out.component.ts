@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from '../shared/customer.model';
-import { AngularFirestoreDocument, AngularFirestore } from 'angularfire2/firestore';
 import { CustomersService } from '../shared/customers.service';
+import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { ToastrService } from 'ngx-toastr';
 import { NgForm } from '@angular/forms';
+import { Customer } from '../shared/customer.model';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-out',
+  templateUrl: './out.component.html',
+  styleUrls: ['./out.component.css']
 })
-export class HomeComponent implements OnInit {
-
-
+export class OutComponent implements OnInit {
   customer: Customer;
   Id: string;
   No: string;
@@ -44,6 +42,5 @@ export class HomeComponent implements OnInit {
     this.noteDoc = this.afs.doc('customers/' + id);
     
   }
-
 
 }
